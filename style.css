@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins&display=swap');
+
+
+body{
+    background: rgb(255,99,71);
+    color: rgb(238,232,170);
+    text-align: center;
+}
+
+h1{
+    font-family: Poppins, sans-serif;
+}
+
+a{
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.253em;
+}
+
+a:hover{
+    color: rgb(238,232,170);
+}
