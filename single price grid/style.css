@@ -112,12 +112,16 @@ footer{
 }
 
 .attribution{
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
 .attribution a:link{
     color: hsl(179, 62%, 43%);
+}
+
+.attribution a:visited{
+    color: hsl(179, 62%, 43%); 
 }
 
 
