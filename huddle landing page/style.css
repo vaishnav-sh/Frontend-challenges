@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: url("./images/bg-desktop.svg"), hsl(257, 40%, 49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1{
+    font-family: "Open sans", sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.part{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.part-1{
+    margin-top: 50px;
+    flex: 1.5;
+}
+
+.part-1 img{
+    max-width: 690px;
+    width: 100%;
+}
+
+.part-2{
+    margin-top: 80px;
+    padding: 50px;
+    flex: 1;
+}
+
+.part-2 p{
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+#logo{
+    width: 200px;
+}
+
+
+#register{
+    margin-top: 40px;
+    color:  hsl(257, 40%, 49%);
+    border: none;
+    padding: 15px 60px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#register:hover{
+    animation: boom 200ms ease-in-out  infinite alternate;
+}
+
+.socials{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials a{
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.socials a:hover{
+    opacity: 0.8;
+    animation: boom 200ms ease-in-out infinite alternate;
+}
+
+
+@keyframes boom{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .part{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .part-2{
+        margin-top: 50px;
+    }
+
+    .socials{
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
