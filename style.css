@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Kufam, cursive;
+    background-color: #77aa77;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h3{
+    font-family: Poppins, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    min-height: 100vh;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.top{
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    animation: fadein 1s ease-in;
+}
+
+.top h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-shadow: 3px 3px #36916e;
+}
+
+.top p {
+    font-family: Poppins, sans-serif;
+}
+
+p a{
+    color: #364F6B;
+}
+
+p a{
+    background: linear-gradient(to bottom, #594f68 0%, #594f68 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    color: #FEFAEC;
+    text-decoration: none;
+    transition: all 0.6s;
+  }
+  
+p a:hover {
+    background-size: 4px 50px;
+    color: #FEFAEC;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadein 2s ease-in normal 1;
+}
+
+.card{
+    width: 350px;
+    margin: 20px;
+    padding: 0px 0px 20px 0px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 15px;
+    transition: all 250ms ease-in;
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+.card img{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card h3{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #625772;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
