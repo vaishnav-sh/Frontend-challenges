@@ -84,9 +84,9 @@ nav a:hover{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
     nav a{
-        margin: 1rem;
+        margin: 0.5rem;
     }
 }
 
