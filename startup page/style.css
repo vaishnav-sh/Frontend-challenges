@@ -84,6 +84,12 @@ nav a:hover{
     }
 }
 
+@media (max-width: 600px){
+    nav a{
+        margin: 1rem;
+    }
+}
+
 
 /*  ***************
     main part
