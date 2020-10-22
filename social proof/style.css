@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+*,
+*::before,
+*::after { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: Spartan, sans-serif;
+}
+
+
+img { 
+    max-width: 100%;
+}
+
+.container {
+    /* background: yellow; */
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main { 
+    min-height: 100vh;
+}
+
+
+/*  ************
+    Typography 
+    ************
+ */
+
+
+.rating__title {
+    margin: 0;
+    font-size: 3.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.rating__desc {
+    color:  hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+
+.rating__text {
+    margin-left: 0.5em;
+    color: hsl(300, 43%, 22%);;
+    font-weight: 700;
+}
+
+
+/*  **********
+    layout
+    ********** 
+*/
+
+/* first section */
+
+.rating {
+    padding: 2.5em 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 43%;
+}
+
+.right { 
+    width: 50%;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.rating__bar { 
+    width: 75%;
+    background: hsl(300, 24%, 96%);
+    margin: 0.5em 0;
+    padding: 0.2em 1em;
+    border-radius: 15px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.r-two {
+    transform: translateX(-10%);
+}
+
+.r-one {
+    transform: translateX(-20%);
+}
+
+@media (max-width: 1000px) {
+    .rating {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    } 
+
+    .rating__bar {
+        padding: 1em 0;
+        transform: translateX(0);
+        width: 65%;
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .rating__text {
+        margin: 0;
+    }
+
+    .right {
+        align-items: center;
+    }
+}
+
+
+/* second section */
+
+.testimonial {
+    padding: 2.5em 0;
+}
+
+.testimonial__card {
+    color: white;
+    background: hsl(300, 43%, 22%);
+    border-radius: 12px;
+    padding: 1.5em 2em;
+}
+
+.testimonial__card + .testimonial__card {
+    margin-left: 2em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name-buyer {
+    margin-left: 1em;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.buyer {
+    margin-top: 0;
+    color: hsl(333, 80%, 67%);
+}
+
+.profile__img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-bottom: 0;
+}
+
+.t-one {
+    transform: translateY(-10%);
+}
+
+.t-three {
+    transform: translateY(10%);
+}
+
+@media (max-width: 1000px) {
+    .testimonial {
+        flex-wrap: wrap;
+        padding: 5em 0;
+    }
+
+    .testimonial__card {
+        transform: translateY(0);
+    }
+
+    .testimonial__card + .testimonial__card {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+
+}
