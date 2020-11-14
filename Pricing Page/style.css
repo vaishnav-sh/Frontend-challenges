@@ -345,6 +345,11 @@ img {
         margin: 0;
     }
 
+    .header {
+        background: url('./images/Mask\ Group\ 1.png');
+        background-position: center;
+        background-size: cover;
+    }
 
     .plan {
         display: flex;
