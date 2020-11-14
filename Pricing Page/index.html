@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pricing component</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="container">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="navigation">
+                <a class="logo" href="#">
+                    <img src="./images/Indexed Logo.png" alt="logo for indexed">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Newsletter</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hero">
+                <h1 class="hero__title">Pricing made easy</h1>
+                <p class="hero__text">Transparent pricing to help you make the right choice. With
+                    <span>30-day money back guarantee.</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="plan container">
+        <div class="plan__card">
+            <p class="plan__name plan__name--starter">Starter Plan</p>
+            <h2 class="plan__price"> &dollar; 6.99/mo</h2>
+            <span class="annual-charge">&dollar; 83.88 billed annually</span>
+            <a href="#" class="index-btn">Start Indexing &rarr;</a>
+            <ul class="plan__details">
+                <li class="plan__item">5,000 Index requests PM.</li>
+                <li class="plan__item">1 team member only</li>
+                <li class="plan__item">.json support</li>
+                <li class="plan__item">No subdomains allowed</li>
+                <li class="plan__item">Queue enabled</li>
+                <li class="plan__item">20s avg. response time</li>
+            </ul>
+        </div>
+
+        <div class="plan__card plan__card--advanced">
+            <p class="plan__name plan__name--advanced">Advanced Plan</p>
+            <h2 class="plan__price"> &dollar; 12.99/mo</h2>
+            <span class="annual-charge">&dollar; 155.88 billed annually</span>
+            <a href="#" class="index-btn index-btn--advanced">Start Indexing &rarr;</a>
+            <ul class="plan__details">
+                <li class="plan__item plan__item--advanced">All starter plan features.</li>
+                <li class="plan__item plan__item--advanced">5 team members.</li>
+                <li class="plan__item plan__item--advanced">.json and xml support.</li>
+                <li class="plan__item plan__item--advanced">Subdomains allowed.</li>
+                <li class="plan__item plan__item--advanced">No queue.</li>
+                <li class="plan__item plan__item--advanced">5s avg. response time.</li>
+            </ul>
+        </div>
+
+        <div class="plan__card">
+            <p class="plan__name plan__name--pro">Pro Plan</p>
+            <h2 class="plan__price"> &dollar; 20.99/mo</h2>
+            <span class="annual-charge">&dollar; 440.78 billed annually</span>
+            <a href="#" class="index-btn">Start Indexing &rarr;</a>
+            <ul class="plan__details">
+                <li class="plan__item">All advanced plan features.</li>
+                <li class="plan__item">Unlimited requests per/mo</li>
+                <li class="plan__item">All file types export</li>
+                <li class="plan__item">Subdomains allowed.</li>
+                <li class="plan__item">No queue.</li>
+                <li class="plan__item">Instant response.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>

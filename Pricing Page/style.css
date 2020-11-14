@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #410FF8;
+    --secondary-blue: #AB94FF;
+    --light-turq: #32BBA4;
+    --light-grey: #A1A1A1;
+    --dark-grey: #8E8E8E;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/*  NAVIGATION  */
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(10%);
+    width: 125px;
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1rem;
+
+    width: 100%;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0px;
+    
+    transform: translateY(-10%)
+
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 55%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height:4px;
+    background: rgb(73, 61, 175);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(4px);
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav__item {
+    margin-top: 2em;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--primary-blue);
+}
+
+.nav__link--button {
+    background: var(--primary-blue);
+    padding: 0.4em 1.4em;
+    border-radius: 100px;
+    color: white;
+
+}
+
+.nav__link--button:hover,
+.nav__link--button:focus {
+    opacity: 0.8;
+    color: white;
+}
+
+
+/*  INTRO  */
+
+.header {
+    background: url('/images/Mask\ Group\ 1.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 1em 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.hero__title {
+    font-size: 2rem;
+}
+
+.hero__text {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 585px;   
+}
+
+.hero__text span {
+    color: var(--light-turq);
+    font-weight: 700;
+}
+
+/*  PLAN SECTION  */
+
+.plan {
+    padding: 2.5em 0;
+}
+
+.plan__card {
+    max-width: 320px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5em 1.9em;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 5px;
+}
+
+.plan__card--advanced {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.plan__card + .plan__card {
+    margin-top: 2.5em;
+}
+
+.plan__name {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.plan__price {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.annual-charge {
+    color: var(--light-grey);
+    font-size: 0.85rem;
+}
+
+.index-btn {
+    display: inline-block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.index-btn:hover,
+.index-btn:focus {
+    opacity: 0.7;
+}
+
+.index-btn--advanced {
+    color: var(--primary-blue);
+    background: white;
+
+}
+
+.index-btn--advanced:hover,
+.index-btn--advanced:focus {
+    opacity: 0.7;
+}
+
+.plan__details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+    position: relative;
+    line-height: 3;
+
+}
+
+.plan__item {
+    padding-left: 2.5em;
+}
+
+.plan__item::before{
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    margin-top: 7px;
+    border-radius: 50%;
+    background-color: rgba(165, 164, 226, 0.6);
+    background-image: url('/images/checkmark-purple.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plan__item--advanced::before {
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    margin-top: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url('/images/checkmark-onwhite.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*  STARTER PLAN CARD */
+
+.plan__name--starter::after {
+    content: '\01F920';
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.3em;
+}
+
+/*  ADVANCED PLAN CARD */
+
+.plan__name--advanced::after {
+    content: '\01F60E';
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.3em;
+}
+
+/* PRO PLAN CARD */
+
+.plan__name--pro::after {
+    content: '\01F921';
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.3em;
+}
+
+@media (min-width: 1000px) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        visibility: visible;
+        height: auto;
+        position: relative;
+
+        width: auto;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .nav__item {
+        margin: 0 0 0 2em;
+    }
+
+    .logo img{
+        margin: 0;
+    }
+
+
+    .plan {
+        display: flex;
+    }
+
+    .plan__card + .plan__card{
+        margin-top: 0;
+        margin-left: 2em;
+    }
+
+}
