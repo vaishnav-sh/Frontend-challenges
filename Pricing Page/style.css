@@ -146,7 +146,7 @@ img {
 /*  INTRO  */
 
 .header {
-    background: url('./images/Mask\ Group\ 1.png') no-repeat;
+    background: url('./images/Mask\ Group\ 1.png') no-repeat, #F9FFF2;
     background-position: center;
     background-size: cover;
 
@@ -346,7 +346,7 @@ img {
     }
 
     .header {
-        background: url('./images/Mask\ Group\ 1.png');
+        background: url('./images/Mask\ Group\ 1.png') no-repeat, #F9FFF2;
         background-position: center;
         background-size: cover;
     }
