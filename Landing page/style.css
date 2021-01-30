@@ -23,7 +23,7 @@ a {
     min-height: 100vh;
     background: url('./img/wrapper.jpg') no-repeat;
     background-size: cover;
-    background-position: -150px;
+    background-position: right;
 }
 
 .container {
