@@ -1,2 +1,2 @@
-# Frontend-mentor-challenges
-This repo contains all challenges completed by me from frontendmentor.io
+# Frontend Challenges
+This repo contains all Frontend challenges completed by me with HTML, CSS with a bit of JavaScript.
