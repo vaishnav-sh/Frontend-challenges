@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2994A;  
+    --grey1: #333333;  
+    --grey2: #4F4F4F;
+    --grey3: #828282;
+    --grey4: #BDBDBD;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: var(--grey1);
+}
+
+img {
+    max-width: 100%;
+}
+
+ol li {
+    margin-bottom: 2em;
+}
+
+.container {
+    max-width: 970px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.orange {
+    color: var(--orange) !important;
+}
+
+/* TYPOGRAPHY */
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.all-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.intro-item {
+    font-size: 0.75rem;
+}
+
+.d-header {
+    font-size: 0.5rem;
+    font-weight: 700;
+    color: var(--grey4);
+}
+
+.d-header + .d-header {
+    font-size: 0.625rem;
+    font-weight: 500;
+    color: var(--grey1);
+}
+
+.i-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.i-subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* INTRO SECTION */
+.intro-section {
+    margin-bottom: 1em;
+}
+
+.intro-list {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 1.6em;
+}
+
+.intro-item {
+    color: var(--grey2);
+    position: relative;
+}
+
+.intro-item::before {
+    font-family: 'Material icons';
+    content: 'drag_indicator';
+    display: inline-block;
+    width: 1.3em;
+    font-size: 1.6em;
+    color: #C4C4C4;
+
+    transform: rotate(90deg);
+    position: absolute;
+    left: -1.6em;
+}
+
+
+/* DETAILS SECTION */
+.detail-item {
+    position: relative;
+    margin-bottom: 1.8em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+}
+
+.other-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fork::after {
+    position: absolute;
+    font-family: 'Material icons';
+    content: 'local_dining';
+    left: 0;
+    color: var(--orange);
+}
+
+.clock::before {
+    position: absolute;
+    font-family: 'Material icons', serif;
+    content: 'query_builder';
+    left: 0;
+    color: var(--grey2);
+}
+
+/* INGREDIANTS SECTION */
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875rem;
+    line-height: 24px;
+}
+
+label {
+    margin-bottom: 2em;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-left: -24px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--grey3);
+    cursor: pointer;
+    outline: none;
+
+    position: relative;
+    top: 8px;
+}
+
+input[type="checkbox"]:after {
+    font-family: 'Material icons';
+    content: 'check';
+    font-weight: 700;
+    color: white;
+    
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: none;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--orange);
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+
+/* INSTRUCTION SECTION */
+.instr-section {
+    color: black;
+}
+
+ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px;
+    
+}
+
+ol li {
+    margin: 2.5em 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    line-height: 24px;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    background: var(--orange);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* credits section */
+.credits {
+    color: var(--grey4);
+    font-size: 0.75rem;
+}
+
+.credits:hover,
+.credits:focus {
+    color: var(--grey3);
+}
+
+.dev {
+    font-size: 0.875rem;
+    margin-top: 8rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--grey3);
+}
+
+.dev a {
+    color: var(--grey3);
+    font-weight: 700;
+    text-decoration:;
+}
+
+.dev a:hover,
+.dev a:focus {
+    color: var(--grey2);
+}
+
+
+
+@media (min-width: 750px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .intro-item {
+        font-size: 0.875rem;
+    }
+
+    .d-header {
+        font-size: 0.6;
+    }
+
+    .d-header + .d-header {
+        font-size: 0.75rem;
+    }
+
+}
+
+@media (min-width: 970px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .details-section {
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);        
+        width: 24%;
+        align-self: flex-start;
+        margin-top: 0.8rem;
+        padding: 3.5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .other-details {
+        flex-direction: column;
+    }
+
+    .ingr-section,
+    .instr-section {
+        width: 68%;
+    }
+
+    .detail-item {
+        margin: 0;
+        padding-left: 1.8em;
+    }
+
+    .clock {
+        margin-top: 2.6em;
+    }
+
+
+    /* typography */
+    .title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro-item {
+        line-height: 18px;
+        width: 68%;
+        margin-bottom: 2.5em;
+    }
+
+    .intro-item::before {
+        left: -1.4em;
+        top: 5px;
+    }
+
+    .d-header {
+        font-size: 0.625rem;
+    }
+
+    .d-header +.d-header {
+        font-size: 0.875rem;
+    }
+
+    .fork::after {
+        font-size: 1.3rem;
+    }
+
+    .clock::before {
+        font-size: 1.3rem;
+    }
+
+    .i-title {
+        font-size: 1.5rem;
+    }
+
+    .i-subtitle {
+        font-size: 1.125rem;
+    }
+
+    form {
+        font-size: 1rem;
+    }
+
+}
