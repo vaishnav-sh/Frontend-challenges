@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #090C10;
+    color: #7F8791;
+    scroll-behavior: smooth;
+}
+
+/* GENERAL */
+
+header {
+    color: #d1d8df;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-top: 1.5em;
+}
+
+a {
+    color: #4A8DDA;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* navigation */
+
+#nav-bar {
+    background-color: #0D1117;
+    min-height: 100vh;
+    width: 275px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#nav-bar li {
+    position: relative;
+}
+
+#name {
+    text-align: center;
+}
+
+#logo {
+    color: white;
+    display: inline-block;
+    /* border: 2px solid grey; */
+    text-align: center;
+    position: relative;
+    left: 20px;
+}
+
+#logo::before {
+    content: ' ';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: -34px;
+    top: -1px;
+    border-radius: 50%;
+    border: none;
+    background: rgb(216, 211, 211) url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png") no-repeat;
+    background-size: contain;
+
+}
+
+#nav-list {
+    padding: 0;
+    margin-top: 2.5em;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    color: #d1d8df;
+    text-decoration: none !important;
+    border-top: 0.1px solid#30363D;
+    padding: 1em 0;
+}
+
+.nav-link-last {
+    border-bottom: 0.1px solid#30363D;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background: #151c25;
+}
+
+/* Documentation */
+#main-doc {
+    width: 78%;
+    position: absolute;
+    margin-left:325px;
+    padding-right: 8em; 
+    line-height: 1.8;
+}
+
+.main-section {
+    margin: 4.5em 0;
+}
+
+.command-list li {
+    margin-bottom: 1em;
+}
+
+.command {
+    background: #212c3b;
+    color: #a7b3c0;
+    padding: 0.1em 0.6em;
+    border-radius: 3px;
+    border: 0.1px solid#292d33;
+}
+
+.example-code {
+    margin-bottom: 2em;
+    max-width: 800px;
+}
+
+/* I MESSED UP HERE */
+@media(max-width: 920px) {
+    #nav-bar {
+        width: 100%;
+        min-height: auto;
+        position: static;
+        margin: 0 auto;
+    }
+
+    #nav-bar ul {
+        border: 0.5px solid #212c3b;
+        max-height: 150px;
+        overflow: auto;
+        margin: 2em auto;
+        width: 90%;
+    }
+
+    #main-doc {
+        width: 90%;
+        position: static;
+        margin: 1em auto;
+        padding-right: 0;
+        line-height: 1.8;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
