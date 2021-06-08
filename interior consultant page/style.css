@@ -211,7 +211,7 @@ a {
     top: -3px;
     left: 0;
     border-radius: 50%;
-    background: url('./photo2.png') no-repeat;
+    background: url('./images/photo2.png') no-repeat;
     background-size: cover;
 }
 
